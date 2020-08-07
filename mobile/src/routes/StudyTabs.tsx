@@ -47,8 +47,14 @@ function StudyTabs() {
         component={TeacherList} 
         options={{
           tabBarLabel: "Proffs",
-          tabBarIcon: ({ color, size }) => {
-            return <Ionicons name="ios-easel" color={color} size={size} />
+          tabBarIcon: ({ color, size, focused }) => {
+            return (
+              <Ionicons 
+                name="ios-easel" 
+                color={focused ? '#8257E5' : color} 
+                size={size} 
+              />
+            );
           }
         }}
       />
@@ -57,8 +63,14 @@ function StudyTabs() {
         component={Favorites} 
         options={{
           tabBarLabel: "Favoritos",
-          tabBarIcon: ({ color, size }) => {
-            return <Ionicons name="ios-heart" color={color} size={size} />
+          tabBarIcon: ({ color, size, focused }) => {
+            return (
+              <Ionicons 
+                name="ios-heart" 
+                color={focused ? '#8257E5' : color} 
+                size={size} 
+              />
+            );
           }
         }}
       />
