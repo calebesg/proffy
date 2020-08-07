@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
   },
 
   buttonSecondary: {
-    backgroundColor: '#64d361'
+    backgroundColor: '#04d361'
   },
 
   buttonText: {
